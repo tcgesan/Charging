@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+
+    flex-direction: column;
+    background-color: black;
+}
+
+.b-body{
+    width: 5.5rem;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    border: 2px solid white;
+    height: 10rem;
+    border-radius: 10px;
+}
+
+.cap{
+    border: 2px solid white;
+    width: 20px;
+    border-top-left-radius: 6px;
+    margin-top: -12px;
+    border-top-right-radius: 6px;
+height: 8px;
+}
+
+.animation{
+    position: absolute;
+    height: 10rem;
+    width: 5.5rem;
+    bottom: 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    animation: fill 6s linear infinite;
+}
+
+
+@keyframes fill {
+    0%{
+        background-color: rgb(211, 0, 0);
+        height: 0.5rem;
+        opacity: .7;
+    
+    }
+    20%{
+        background-color: rgb(246, 0, 0);
+         height: 3.4rem;
+    }
+    30%{
+        background-color: rgb(213, 138, 0);
+        height: 4rem;
+    }
+    40%{
+        background-color: rgb(255, 151, 24);
+        height: 5rem;
+    }
+    50%{
+        background-color: rgb(234, 207, 0);
+        height: 6rem;
+    }
+    60%{
+background-color: rgb(255, 221, 0);
+height: 7rem;
+    }
+
+70%{
+    height: 8rem;
+    background-color: rgb(212, 255, 0);
+}
+
+80%{
+    height: 9rem;
+    background-color: rgb(43, 255, 43);
+}
+100%{
+    height: 10rem;
+    background-color: rgb(4, 226, 4);
+ 
+}
+}
+@font-face {
+    font-family: op;
+    src: url(font/Poppins-Regular.ttf);
+}
+
+h1{
+    font-size: 1.6rem;
+    color: white;
+    bottom: 0;
+    margin-bottom: 35%;
+    width: 80%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: op;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    animation: colors 6s linear infinite;
+}
+
+@keyframes colors {
+    0%{
+        background-color: rgb(211, 0, 0);
+    }
+    20%{
+        background-color: rgb(246, 0, 0);
+    }
+    30%{
+        background-color: rgb(213, 138, 0);
+    }
+    40%{
+        background-color: rgb(255, 151, 24);
+    }
+    50%{
+        background-color: rgb(234, 207, 0);
+    }
+    60%{
+background-color: rgb(255, 221, 0);
+    }
+
+70%{
+    background-color: rgb(212, 255, 0);
+}
+
+80%{
+    background-color: rgb(43, 255, 43);
+}
+100%{
+    background-color: rgb(4, 226, 4);
+ 
+}
+}
+
+.counter{
+    color: white;
+    z-index: 1000;
+    font-family: op;
+}
+
